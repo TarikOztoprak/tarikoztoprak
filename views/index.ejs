@@ -5,42 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        a{
-            color: black;
-        }
-        a:hover {
-        text-decoration: none;
-        color: #333333;
-        }
-        body{
-            background-color: #dddddd;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
 
     <title>Ana Sayfa</title>
 </head>
 <body>
+    <div id="navigator" class="navigator" style="text-align: center;">
+        <div id="hidd">
+        Frontend <br> Developer
+        </div>  
+    </div>
     <nav class="navbar navbar-expand-md 33, navbar-static-top" style="background-color: #eeeeee;">
         <a class="navbar-brand" href="#" style="font-size: 20pt; color: blue;" >MUHAMMET TARIK ÖZTOPRAK</a>
-        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
-    <div style="text-align: center;">
-        <a href="https://www.linkedin.com/in/muhammet-tar%C4%B1k-%C3%B6ztoprak-12b68a173/"><img src="linkedin.png" width="64" height="64"></a>
-       <a href="https://github.com/TarikOztoprak"><img src="github.png" width="64" height="64"></a>
-    </div>
-    <br>
-    <br>
+    
     <div class="row">
           <div class="col-sm-2">
-
+            <div id="navigator" class="navigator">
+                <button class="butt" id="butt" style="float: right;" onclick="kucult()">←</button>
+                <br><br>
+                <div id = "icons" style="text-align: center;">
+                    
+                    LinkedIn <br>
+                    <a href="https://www.linkedin.com/in/muhammet-tar%C4%B1k-%C3%B6ztoprak-12b68a173/">
+                        <img src="linkedin.png" width="64" height="64"></a>
+                        <br> <br>
+                    GitHub <br>
+                    <a href="https://github.com/TarikOztoprak"><img src="github.png" width="64" height="64"></a>
+                    <br>
+                   
+                 </div>
+            </div>
           </div>
+          
+        
           <div class="col-sm-4">
+            <br>
+            <br>
             <a href="link">
                 <div style=" margin-bottom: 50px;">
                     <h2>Blog Başlık</h2> 
@@ -68,6 +73,8 @@
           </div>
          
           <div class="col-sm-4">
+            <br>
+            <br>
          <a href="link">
             <div style=" margin-bottom: 50px;">
                 <h2>Blog Baslık</h2> 

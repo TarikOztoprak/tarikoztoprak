@@ -5,13 +5,12 @@ app.use( express.static( "public" ) );
 
 app.set('view engine', 'ejs');
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', function(req, res) {
 res.render('index');
 });
 
-app.get('/takorpg3', function(req, res) {
-    res.render('takorpg3');
-    });
 
 //404 Not Found
 app.get('*', function(req, res){

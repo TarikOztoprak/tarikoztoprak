@@ -1,0 +1,24 @@
+.navigator{
+    min-width: 5vw;
+    height: 100vw;
+    float: left;
+    background: #dddddd;
+    position: fixed;
+    
+}
+.butt
+{
+    background-color: #dddddd;
+    border-color: #dddddd;
+}
+a{
+    color: black;
+}
+a:hover {
+text-decoration: none;
+color: #333333;
+}
+body{
+    background-color: #dddddd;
+    margin: 0;
+}
