@@ -21,4 +21,5 @@ color: #333333;
 body{
     background-color: #dddddd;
     margin: 0;
+    overflow-x: hidden;
 }

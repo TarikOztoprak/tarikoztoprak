@@ -11,11 +11,7 @@
     <title>Ana Sayfa</title>
 </head>
 <body>
-    <div id="navigator" class="navigator" style="text-align: center;">
-        <div id="hidd">
-        Frontend <br> Developer
-        </div>  
-    </div>
+    
     <nav class="navbar navbar-expand-md 33, navbar-static-top" style="background-color: #eeeeee;">
         <a class="navbar-brand" href="#" style="font-size: 20pt; color: blue;" >MUHAMMET TARIK ÖZTOPRAK</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +20,7 @@
     </nav>
     
     <div class="row">
-          <div class="col-sm-2">
+          <div class="col-sm-3">
             <div id="navigator" class="navigator">
                 <button class="butt" id="butt" style="float: right;" onclick="kucult()">←</button>
                 <br><br>
@@ -43,64 +39,29 @@
           </div>
           
         
-          <div class="col-sm-4">
+         <div class="col-sm-6">
             <br>
             <br>
-            <a href="link">
-                <div style=" margin-bottom: 50px;">
-                    <h2>Blog Başlık</h2> 
-                    <img src="example.jpg" width="100%">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic molestias repellat. Rem consectetur doloremque natus, asperiores maxime at consequatur ipsam eius. Ducimus minus nostrum, voluptate at incidunt praesentium sit? </p> 
-                    <p style="float: right;">Tarih</p>
-                </div>
-            </a>
-            <a href="link">
-                <div style=" margin-bottom: 50px;">
-                    <h2>Blog Baslık</h2> 
-                    <img src="example.jpg" width="100%">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quae minus repudiandae laboriosam placeat beatae enim alias incidunt iusto provident, nesciunt sunt nisi, aspernatur velit magnam maiores eaque adipisci! Corrupti.</p> 
-                    <p style="float: right;">Tarih</p>
-                </div>
-            </a>
-            <a href="link">
-                <div style=" margin-bottom: 50px;">
-                    <h2>Blog Baslık</h2> 
-                    <img src="example.jpg" width="100%">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quae minus repudiandae laboriosam placeat beatae enim alias incidunt iusto provident, nesciunt sunt nisi, aspernatur velit magnam maiores eaque adipisci! Corrupti.</p> 
-                    <p style="float: right;">Tarih</p>
-                </div>
-            </a>
-          </div>
+            
+            <div style=" margin-bottom: 50px;">
+                <h2 style="text-align: center;">İlk Blog ve Kaydırma Çubuğu(Scroll Bar) Kapatma</h2> 
+                <img src="example.jpg" style="margin-bottom: 15px;" width="100%">
+                <p style="text-align: justify;"> &emsp; Kendime bir blog sitesi yazarak frontend ve backend bilgilerimi geliştirebileceğimi düşündüm. İşe yaradı da!
+                Ama bloğuma yazacağım içeriği hiç düşünmemiştim. Bugün, öğrendiğim ve daha sonra unutmak istemediğim bazı püf noktalarını
+                yazmaya karar verdim ve bu ilk bloğumu yazmaya başladım. <br> <br>
+                &emsp; Bloğumunda gereksiz bir şekilde yatay kaydırma çubuğu
+                (scroll bar) bulunmaktaydı ve sitemi çirkin göstermekteydi. Meğer basit bir css koduyla çözülebilmekteymiş. kod: <br>
+                <div style="color: red;">overflow-x: hidden;</div> x ekseninde kaydırma çubuğuna kapatır.
+                <div style="color: red;">overflow-x: hidden;</div> y ekseninde kaydırma çubuğunu kapatır.
+                <div style="color: red;" >overflow: hidden</div> yaparsak hem x hem de y yönünde kaydırma çubuğunu kapatır. <br>
+                &emsp; Bu kodu css body içine ekleyerek sorunumu çözdüm.
+                </p> 
+                <p style="float: right;">21.06.2020</p>
+            </div>
          
-          <div class="col-sm-4">
-            <br>
-            <br>
-         <a href="link">
-            <div style=" margin-bottom: 50px;">
-                <h2>Blog Baslık</h2> 
-                <img src="example.jpg" width="100%">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quae minus repudiandae laboriosam placeat beatae enim alias incidunt iusto provident, nesciunt sunt nisi, aspernatur velit magnam maiores eaque adipisci! Corrupti.</p> 
-                <p style="float: right;">Tarih</p>
-            </div>
-        </a>
-        <a href="link">
-            <div style=" margin-bottom: 50px;">
-                <h2>Blog Baslık</h2> 
-                <img src="example.jpg" width="100%">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quae minus repudiandae laboriosam placeat beatae enim alias incidunt iusto provident, nesciunt sunt nisi, aspernatur velit magnam maiores eaque adipisci! Corrupti.</p> 
-                <p style="float: right;">Tarih</p>
-            </div>
-        </a>
-        <a href="link">
-            <div style=" margin-bottom: 50px;">
-                <h2>Blog Baslık</h2> 
-                <img src="example.jpg" width="100%">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quae minus repudiandae laboriosam placeat beatae enim alias incidunt iusto provident, nesciunt sunt nisi, aspernatur velit magnam maiores eaque adipisci! Corrupti.</p> 
-                <p style="float: right;">Tarih</p>
-            </div>
-        </a>
-          </div>
-          <div class="col-sm-2">
+         </div>
+
+          <div class="col-sm-3">
             
           </div>
       </div>
