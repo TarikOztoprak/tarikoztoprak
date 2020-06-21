@@ -1,18 +1,9 @@
-.navigator{
-    min-width: 0vw;
-    height: 100vw;
- 
-    background: #dddddd;
-    position: fixed;
-    
-}
+
 .butt
 {
-    float: left;
     background-color: #dddddd;
     border-color: #dddddd;
-    visibility: visible;
-    
+    font-family: "Times New Roman";
 }
 a{
     color: black;
