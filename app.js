@@ -11,6 +11,13 @@ app.get('/', function(req, res) {
 res.render('index');
 });
 
+app.get('/web-gelistirme', function(req, res) {
+    res.render('web');
+    });
+
+app.get('/hakkimda', function(req, res) {
+    res.render('hakkimda');
+    });
 
 //404 Not Found
 app.get('*', function(req, res){
