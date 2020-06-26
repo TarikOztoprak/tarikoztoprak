@@ -5,16 +5,24 @@
     border-color: #dddddd;
     font-family: "Times New Roman";
 }
-a{
-    color: black;
-}
-a:hover {
-text-decoration: none;
-color: #333333;
-}
+
 body{
     background-color: #dddddd;
     margin: 0;
     overflow-x: hidden;
     width: 100%;
+
+}
+
+.all-bar
+{
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    
+}
+a:hover
+{
+    color: unset;
+    text-decoration: wavy;
 }
