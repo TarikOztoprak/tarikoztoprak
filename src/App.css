@@ -1,21 +1,11 @@
 .App {
-  text-align: left;
   float: left;
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 100vw;
+  
 }
 
 .Side-bar{
   float: left;
-  min-width: 500px;
   width: 40vw;
   min-height: 100vh;
   background-color: gray;
@@ -26,14 +16,12 @@
   border-width: 0;
   border-right-width: 5px;
   border-color: lightblue;
-  padding-left: 20px;
-  padding-right: 20px;
   font-size: calc(6px + 2vmin);
   color: white;
+  position: relative;
 }
 .Profil{
-  min-width: 188px;
-  min-height: 188px;
+ 
   width: 15vw;
   height: 15vw;
   border-radius: 100vw;
@@ -50,3 +38,48 @@
   min-height: 64px;
 }
 
+.Projects{
+  width: 59vw;
+  float: left;
+  text-align: center;
+}
+
+.Project-image{
+  width: 60%;
+}
+
+
+.Projects-button{
+  background-color: #008CBA;
+  width: 5vw;
+  height: 5vw;
+  font-size: calc(8pt + 2vw);
+  color: white;
+  border: none;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .Side-bar{
+    width: 100vw;
+  }
+
+  .Project-image{
+    width: 100%;
+  }
+
+  .Projects{
+    width: 100vw;
+  }
+
+  
+.Projects-button{
+  background-color: #008CBA;
+  width: 5vh;
+  height: 5vh;
+  font-size: calc(8pt + 2vh);
+ 
+}
+
+}
