@@ -58,6 +58,17 @@
   border: none;
   margin: 5px;
 }
+.Projects-button:hover{
+  animation-name: background-color;
+  animation-duration: 500ms;
+}
+
+@keyframes background-color {
+  100% {
+    background-color: #000;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
 
