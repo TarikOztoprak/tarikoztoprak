@@ -22,17 +22,29 @@ class App extends React.Component {
         <div className="col-sm-6 p-0">
           <span className="Projects">
 
-          <h1 style={{minWidth: '100%' , marginTop: '0', float:'left', backgroundColor:'#008CBA'}}>Projeler</h1>
-        
-          <button style={{float:'left'}} className="Projects-button" onClick={() => this.state.index === 0 ? this.setState({index: this.state.headerList.length-1}) : this.setState({index: this.state.index -1})} >{"<"}</button>      
-          <button style={{float:'right'}} className="Projects-button" onClick={() => this.state.index === this.state.headerList.length-1 ? this.setState({index: 0}) : this.setState({index: this.state.index +1})} >{">"}</button>      
-
-          <h1>{this.state.headerList[this.state.index]}</h1> 
+          <h1 className="p-3" style={{minWidth: '100%' , marginTop: '0', float:'left', backgroundColor:'#008CBA'}}>Projeler</h1>
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-2 p-0">
+              <button style={{float:'left'}} className="Projects-button" onClick={() => this.state.index === 0 ? this.setState({index: this.state.headerList.length-1}) : this.setState({index: this.state.index -1})} >{"<"}</button>      
+              </div>
+              <div className="col-8 p-0">
+                <h1 className="mt-3">{this.state.headerList[this.state.index]}</h1> 
+              </div>
+              <div className="col-2 p-0">
+                <button style={{float:'right'}} className="Projects-button" onClick={() => this.state.index === this.state.headerList.length-1 ? this.setState({index: 0}) : this.setState({index: this.state.index +1})} >{">"}</button>      
+              </div>
+            </div>
+          </div>
+          
+         
+         
+          
           <a href={this.state.linkList[this.state.index]}>
-          <img className="Project-image" src={this.state.imageList[this.state.index]} alt="pic"></img>
+          <img className="Project-image mt-5" src={this.state.imageList[this.state.index]} alt="pic"></img>
           </a>
           <br/>
-          <p>{this.state.infoList[this.state.index]}</p>
+          <p className="mt-3">{this.state.infoList[this.state.index]}</p>
 
           </span>
         </div>
