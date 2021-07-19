@@ -5,7 +5,7 @@ import linkedin from "./picture/linkedin.png"
 
 function SideBar() {
     return(
-    <div className="Side-bar">
+    <div className="Side-bar ">
         <img src={profil} alt="profil" className="Profil"></img>
         <br/>
         Ben Muhammet Tarık Öztoprak Sakarya Üniversitesi Bilgisayar Mühendisliği 3.sınıf öğrencisiyim. Kendimi Frontend alanında geliştirmeye gayret ediyorum. Bildiğim teknolojiler: <br/> 

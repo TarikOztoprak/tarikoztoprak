@@ -15,11 +15,15 @@ class App extends React.Component {
 
   render(){
     return (
-      <div className="App">
-        <SideBar/>
-        <div className="Projects">
-          <h1 style={{minWidth: '100%' , marginTop: '0', float:'left', backgroundColor:'lightblue'}}>Projeler</h1>
-          
+   
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-sm-6 p-0"><SideBar/></div>
+        <div className="col-sm-6 p-0">
+          <span className="Projects">
+
+          <h1 style={{minWidth: '100%' , marginTop: '0', float:'left', backgroundColor:'#008CBA'}}>Projeler</h1>
+        
           <button style={{float:'left'}} className="Projects-button" onClick={() => this.state.index === 0 ? this.setState({index: this.state.headerList.length-1}) : this.setState({index: this.state.index -1})} >{"<"}</button>      
           <button style={{float:'right'}} className="Projects-button" onClick={() => this.state.index === this.state.headerList.length-1 ? this.setState({index: 0}) : this.setState({index: this.state.index +1})} >{">"}</button>      
 
@@ -29,9 +33,14 @@ class App extends React.Component {
           </a>
           <br/>
           <p>{this.state.infoList[this.state.index]}</p>
-         
+
+          </span>
         </div>
       </div>
+    </div>
+        
+        
+   
     );
   }
 }

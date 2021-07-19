@@ -1,24 +1,15 @@
-.App {
-  float: left;
-  min-width: 100vw;
-  
-}
-
 .Side-bar{
   float: left;
-  width: 40vw;
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
   background-color: gray;
   text-align: center;
   background-image: url("./picture/background.jpg");
   background-size: cover;
-  border-style: solid;
-  border-width: 0;
-  border-right-width: 5px;
-  border-color: lightblue;
   font-size: calc(6px + 2vmin);
   color: white;
-  position: relative;
+ 
 }
 .Profil{
  
@@ -39,9 +30,11 @@
 }
 
 .Projects{
-  width: 59vw;
   float: left;
   text-align: center;
+  min-height: 100vh;
+  background: rgb(173,216,230);
+  background: linear-gradient(172deg, rgba(173,216,230,1) 0%, rgba(173,216,230,1) 50%, rgba(34,62,122,1) 100%);
 }
 
 .Project-image{
@@ -61,34 +54,25 @@
 .Projects-button:hover{
   animation-name: background-color;
   animation-duration: 500ms;
+  animation-fill-mode: forwards;
 }
 
 @keyframes background-color {
   100% {
-    background-color: #000;
+    background-color: rgb(1, 8, 97);
   }
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
 
   .Side-bar{
-    width: 100vw;
-  }
-
-  .Project-image{
-    width: 100%;
-  }
-
-  .Projects{
-    width: 100vw;
+    border-right-width: 0px;
   }
 
   .Profil{
- 
     width: 30vw;
     height: 30vw;
-
   }
 
   
